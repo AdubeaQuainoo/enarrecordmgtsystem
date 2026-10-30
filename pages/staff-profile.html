@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>EN.AR | Staff Profile</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+    <div class="dashboard-layout">
+
+
+        <!-- =========================
+             TOP NAVIGATION
+        ========================== -->
+
+        <header class="top-navigation">
+
+    <div class="brand">
+        <span>EN.AR</span>
+    </div>
+
+    <nav class="desktop-navigation">
+        <a href="dashboard.html" class="">Dashboard</a>
+        <a href="staff.html" class="active">Staff Directory</a>
+        <a href="add-staff.html" class="">Add Staff</a>
+        <a href="settings.html" class="">Settings</a>
+    </nav>
+
+    <button class="mobile-menu-button" id="mobileMenuButton" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        ☰
+    </button>
+
+    <div class="admin-profile-wrapper">
+        <button class="admin-profile" id="adminProfileButton" type="button" aria-label="Open admin profile" aria-expanded="false">
+            <div class="admin-avatar">AU</div>
+            <div>
+                <strong>Admin User</strong>
+                <small>Administrator</small>
+            </div>
+            <span class="material-icons admin-profile-arrow">expand_more</span>
+        </button>
+
+        <div class="admin-profile-menu" id="adminProfileMenu">
+            <div class="admin-menu-heading">
+                <strong>Admin User</strong>
+                <span>Administrator account</span>
+            </div>
+            <div class="admin-menu-item">
+                <span>Role</span>
+                <strong>Administrator</strong>
+            </div>
+            <div class="admin-menu-item">
+                <span>Access</span>
+                <strong>Staff &amp; Records Management</strong>
+            </div>
+            <div class="admin-menu-item">
+                <span>Status</span>
+                <strong>Active</strong>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+
+        <!-- =========================
+             MOBILE NAVIGATION
+        ========================== -->
+<nav class="mobile-navigation" id="mobileNavigation">
+    <a href="dashboard.html" class="">Dashboard</a>
+    <a href="staff.html" class="active">Staff Directory</a>
+    <a href="add-staff.html" class="">Add Staff</a>
+    <a href="settings.html" class="">Settings</a>
+</nav>
+
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
+
+        <main class="dashboard-content">
+
+
+            <!-- Back Button -->
+
+            <a
+                href="staff.html"
+                class="back-button"
+            >
+                ← Back to Staff Directory
+            </a>
+
+
+            <!-- Page Heading -->
+
+            <div class="page-heading">
+
+                <div>
+
+                    <h1>
+                        Staff Profile
+                    </h1>
+
+                    <p>
+                        View detailed staff information
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 STAFF PROFILE
+            ========================== -->
+
+            <section class="profile-card">
+
+
+                <!-- Profile Header -->
+
+                <div class="profile-header">
+
+                    <div
+                        class="profile-avatar"
+                        id="profileAvatar"
+                    >
+                        A
+                    </div>
+
+                    <div>
+
+                        <h2 id="profileName">
+                            Staff Name
+                        </h2>
+
+                        <p id="profilePosition">
+                            Job Position
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     STAFF INFORMATION
+                ========================== -->
+
+                <div class="profile-information">
+
+
+                    <!-- Staff ID -->
+
+                    <div class="profile-item">
+
+                        <span>
+                            Staff ID
+                        </span>
+
+                        <strong id="profileId">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Email -->
+
+                    <div class="profile-item">
+
+                        <span>
+                            Email Address
+                        </span>
+
+                        <strong id="profileEmail">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Phone -->
+
+                    <div class="profile-item">
+
+                        <span>
+                            Phone Number
+                        </span>
+
+                        <strong id="profilePhone">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Department -->
+
+                    <div class="profile-item">
+
+                        <span>
+                            Unit / Department
+                        </span>
+
+                        <strong id="profileDepartment">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Position -->
+
+                    <div class="profile-item">
+
+                        <span>
+                            Job Role / Position
+                        </span>
+
+                        <strong id="profilePositionDetails">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Category -->
+
+                    <div class="profile-item">
+
+                        <span>
+                            Staff Category
+                        </span>
+
+                        <strong id="profileCategory">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Employment Type -->
+
+                    <div class="profile-item">
+
+                        <span>
+                            Employment Type
+                        </span>
+
+                        <strong id="profileEmploymentType">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Employment Status -->
+
+                    <div class="profile-item">
+
+                        <span>
+                            Employment Status
+                        </span>
+
+                        <strong id="profileStatus">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Date Joined -->
+
+                    <div class="profile-item">
+
+                        <span>
+                            Date Joined
+                        </span>
+
+                        <strong id="profileDateJoined">
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     PROFILE ACTIONS
+                ========================== -->
+
+                <div class="profile-actions">
+
+                    <a
+                        href="#"
+                        id="editStaffButton"
+                        class="edit-staff-button"
+                    >
+                        Edit Staff
+                    </a>
+
+                    <button
+                        type="button"
+                        id="deleteStaffButton"
+                        class="delete-staff-button"
+                    >
+                        Delete Staff
+                    </button>
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+    <!-- =========================
+         DELETE CONFIRMATION MODAL
+    ========================== -->
+
+    <div
+        class="delete-modal-overlay"
+        id="deleteModal"
+    >
+
+        <div class="delete-modal">
+
+
+            <!-- Warning Icon -->
+
+            <div class="delete-modal-icon">
+                !
+            </div>
+
+
+            <!-- Modal Heading -->
+
+            <h2>
+                Delete Staff Member?
+            </h2>
+
+
+            <!-- Modal Message -->
+
+            <p id="deleteMessage">
+                Are you sure you want to delete this staff member?
+            </p>
+
+
+            <!-- Modal Buttons -->
+
+            <div class="delete-modal-actions">
+
+                <button
+                    type="button"
+                    id="cancelDeleteButton"
+                    class="cancel-delete-button"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    type="button"
+                    id="confirmDeleteButton"
+                    class="confirm-delete-button"
+                >
+                    Delete
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="../js/common.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/staff-profile.js"></script>
+
+
+</body>
+
+</html>

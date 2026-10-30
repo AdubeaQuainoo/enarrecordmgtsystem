@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>EN.AR | Edit Staff</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+
+        <!-- TOP NAVIGATION -->
+        <header class="top-navigation">
+
+    <div class="brand">
+        <span>EN.AR</span>
+    </div>
+
+    <nav class="desktop-navigation">
+        <a href="dashboard.html" class="">Dashboard</a>
+        <a href="staff.html" class="active">Staff Directory</a>
+        <a href="add-staff.html" class="">Add Staff</a>
+        <a href="settings.html" class="">Settings</a>
+    </nav>
+
+    <button class="mobile-menu-button" id="mobileMenuButton" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        ☰
+    </button>
+
+    <div class="admin-profile-wrapper">
+        <button class="admin-profile" id="adminProfileButton" type="button" aria-label="Open admin profile" aria-expanded="false">
+            <div class="admin-avatar">AU</div>
+            <div>
+                <strong>Admin User</strong>
+                <small>Administrator</small>
+            </div>
+            <span class="material-icons admin-profile-arrow">expand_more</span>
+        </button>
+
+        <div class="admin-profile-menu" id="adminProfileMenu">
+            <div class="admin-menu-heading">
+                <strong>Admin User</strong>
+                <span>Administrator account</span>
+            </div>
+            <div class="admin-menu-item">
+                <span>Role</span>
+                <strong>Administrator</strong>
+            </div>
+            <div class="admin-menu-item">
+                <span>Access</span>
+                <strong>Staff &amp; Records Management</strong>
+            </div>
+            <div class="admin-menu-item">
+                <span>Status</span>
+                <strong>Active</strong>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+
+        <!-- MOBILE NAVIGATION -->
+       <nav class="mobile-navigation" id="mobileNavigation">
+    <a href="dashboard.html" class="">Dashboard</a>
+    <a href="staff.html" class="active">Staff Directory</a>
+    <a href="add-staff.html" class="">Add Staff</a>
+    <a href="settings.html" class="">Settings</a>
+</nav>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="dashboard-content">
+
+
+            <!-- PAGE HEADING -->
+            <div class="page-heading">
+
+                <div>
+
+                    <h1>
+                        Edit Staff
+                    </h1>
+
+                    <p>
+                        Update staff member information
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- EDIT FORM -->
+            <section class="form-card">
+
+                <form id="editStaffForm">
+
+
+                    <!-- BASIC INFORMATION -->
+                    <div class="form-section">
+
+                        <h2>
+                            Basic Information
+                        </h2>
+
+                        <p>
+                            Update the staff member's basic details.
+                        </p>
+
+                    </div>
+
+
+                    <!-- STAFF ID -->
+                    <div class="form-group">
+
+                        <label for="staffId">
+                            Staff ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="staffId"
+                            name="staffId"
+                            readonly
+                        >
+
+                    </div>
+
+
+                    <!-- FULL NAME -->
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@enar.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- PHONE -->
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="024 123 4567"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- WORK INFORMATION -->
+                    <div class="form-section">
+
+                        <h2>
+                            Work Information
+                        </h2>
+
+                        <p>
+                            Update the staff member's work details.
+                        </p>
+
+                    </div>
+
+
+                    <!-- DEPARTMENT -->
+                    <div class="form-group">
+
+                        <label for="department">
+                            Unit / Department
+                        </label>
+
+                        <select
+                            id="department"
+                            name="department"
+                            required
+                        >
+
+                            <option value="">
+                                Select Department
+                            </option>
+
+                            <option value="ADUBzTech Hub">
+                                ADUBzTech Hub
+                            </option>
+
+                            <option value="Human Resources">
+                                Human Resources
+                            </option>
+
+                            <option value="Data & Analytics">
+                                Data & Analytics
+                            </option>
+
+                            <option value="Finance">
+                                Finance
+                            </option>
+
+                            <option value="Marketing">
+                                Marketing
+                            </option>
+
+                            <option value="Operations">
+                                Operations
+                            </option>
+
+                            <option value="Legal">
+                                Legal
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- POSITION -->
+                    <div class="form-group">
+
+                        <label for="position">
+                            Job Role / Position
+                        </label>
+
+                        <input
+                            type="text"
+                            id="position"
+                            name="position"
+                            placeholder="e.g. Software Developer"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- CATEGORY -->
+                    <div class="form-group">
+
+                        <label for="category">
+                            Staff Category
+                        </label>
+
+                        <select
+                            id="category"
+                            name="category"
+                            required
+                        >
+
+                            <option value="">
+                                Select Category
+                            </option>
+
+                            <option value="Staff">
+                                Staff
+                            </option>
+
+                            <option value="Intern">
+                                Intern
+                            </option>
+
+                            <option value="National Service Personnel">
+                                National Service Personnel
+                            </option>
+
+                            <option value="Contract Personnel">
+                                Contract Personnel
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- EMPLOYMENT TYPE -->
+                    <div class="form-group">
+
+                        <label for="employmentType">
+                            Employment Type
+                        </label>
+
+                        <select
+                            id="employmentType"
+                            name="employmentType"
+                            required
+                        >
+
+                            <option value="">
+                                Select Employment Type
+                            </option>
+
+                            <option value="Full-Time">
+                                Full-Time
+                            </option>
+
+                            <option value="Part-Time">
+                                Part-Time
+                            </option>
+
+                            <option value="Contract">
+                                Contract
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- STATUS -->
+                    <div class="form-group">
+
+                        <label for="status">
+                            Employment Status
+                        </label>
+
+                        <select
+                            id="status"
+                            name="status"
+                            required
+                        >
+
+                            <option value="">
+                                Select Status
+                            </option>
+
+                            <option value="Active">
+                                Active
+                            </option>
+
+                            <option value="On Leave">
+                                On Leave
+                            </option>
+
+                            <option value="Inactive">
+                                Inactive
+                            </option>
+
+                            <option value="Completed">
+                                Completed
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- DATE JOINED -->
+                    <div class="form-group">
+
+                        <label for="dateJoined">
+                            Date Joined
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dateJoined"
+                            name="dateJoined"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- FORM BUTTONS -->
+                    <div class="form-actions">
+
+                        <a
+                            href="staff.html"
+                            class="cancel-button"
+                        >
+                            Cancel
+                        </a>
+
+                        <button
+                            type="submit"
+                            class="login-button add-staff-submit"
+                        >
+                            Save Changes
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/data.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/edit-staff.js"></script>
+
+</body>
+
+</html>

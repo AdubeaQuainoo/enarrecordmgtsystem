@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>EN.AR | Dashboard</title>
+
+    <!-- Material Icons -->
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <div class="dashboard-layout">
+
+
+        <!-- =================================
+             TOP NAVIGATION
+        ================================== -->
+
+        <header class="top-navigation">
+
+    <div class="brand">
+        <span>EN.AR</span>
+    </div>
+
+    <nav class="desktop-navigation">
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="staff.html" class="">Staff Directory</a>
+        <a href="add-staff.html" class="">Add Staff</a>
+        <a href="settings.html" class="">Settings</a>
+    </nav>
+
+    <button class="mobile-menu-button" id="mobileMenuButton" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        ☰
+    </button>
+
+    <div class="admin-profile-wrapper">
+        <button class="admin-profile" id="adminProfileButton" type="button" aria-label="Open admin profile" aria-expanded="false">
+            <div class="admin-avatar">AU</div>
+            <div>
+                <strong>Admin User</strong>
+                <small>Administrator</small>
+            </div>
+            <span class="material-icons admin-profile-arrow">expand_more</span>
+        </button>
+
+        <div class="admin-profile-menu" id="adminProfileMenu">
+            <div class="admin-menu-heading">
+                <strong>Admin User</strong>
+                <span>Administrator account</span>
+            </div>
+            <div class="admin-menu-item">
+                <span>Role</span>
+                <strong>Administrator</strong>
+            </div>
+            <div class="admin-menu-item">
+                <span>Access</span>
+                <strong>Staff &amp; Records Management</strong>
+            </div>
+            <div class="admin-menu-item">
+                <span>Status</span>
+                <strong>Active</strong>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+
+        <!-- =================================
+             MOBILE NAVIGATION
+        ================================== -->
+
+        <nav class="mobile-navigation" id="mobileNavigation">
+    <a href="dashboard.html" class="active">Dashboard</a>
+    <a href="staff.html" class="">Staff Directory</a>
+    <a href="add-staff.html" class="">Add Staff</a>
+    <a href="settings.html" class="">Settings</a>
+</nav>
+
+
+        <!-- =================================
+             MAIN DASHBOARD CONTENT
+        ================================== -->
+
+        <main class="dashboard-content">
+
+
+            <!-- PAGE HEADING -->
+
+            <div class="page-heading">
+
+                <div>
+
+                    <h1>
+                        Dashboard
+                    </h1>
+
+                    <p>
+                        Overview of EN.AR workforce
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 STATISTICS
+            ================================== -->
+
+            <section class="statistics-grid">
+
+
+                <!-- TOTAL WORKFORCE -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+
+                        <span class="material-icons">
+                            people
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Total Workforce
+                        </p>
+
+                        <h2 id="totalWorkforce">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TOTAL STAFF -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+
+                        <span class="material-icons">
+                            person
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Total Staff
+                        </p>
+
+                        <h2 id="totalStaff">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FULL-TIME -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+
+                        <span class="material-icons">
+                            business_center
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Full-Time Workers
+                        </p>
+
+                        <h2 id="fullTimeWorkers">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PART-TIME -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon cyan">
+
+                        <span class="material-icons">
+                            schedule
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Part-Time Workers
+                        </p>
+
+                        <h2 id="partTimeWorkers">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTRACT PERSONNEL -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon red">
+
+                        <span class="material-icons">
+                            description
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Contract Personnel
+                        </p>
+
+                        <h2 id="contractPersonnel">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <!-- NATIONAL SERVICE -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+
+                        <span class="material-icons">
+                            school
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <p>
+                            National Service
+                        </p>
+
+                        <h2 id="nationalService">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INTERNS -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+
+                        <span class="material-icons">
+                            school
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Interns
+                        </p>
+
+                        <h2 id="totalInterns">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- =================================
+                 LOWER DASHBOARD
+            ================================== -->
+
+            <section class="dashboard-lower-grid">
+
+
+                <!-- =================================
+                     WORKFORCE OVERVIEW
+                ================================== -->
+
+                <div class="dashboard-card">
+
+
+                    <div class="card-heading">
+
+                        <h2>
+                            Workforce Overview
+                        </h2>
+
+                    </div>
+
+
+                    <div class="workforce-overview">
+
+
+                        <!-- DONUT CHART -->
+
+                        <div class="overview-circle">
+
+                            <div>
+
+                                <strong id="overviewTotal">
+                                    0
+                                </strong>
+
+                                <span>
+                                    Workers
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- BREAKDOWN -->
+
+                        <div class="overview-list">
+
+
+                            <p>
+
+                                <span class="dot blue-dot"></span>
+
+                                Full-Time Workers:
+
+                                <strong id="overviewFullTime">
+                                    0
+                                </strong>
+
+                            </p>
+
+
+                            <p>
+
+                                <span class="dot purple-dot"></span>
+
+                                Part-Time Workers:
+
+                                <strong id="overviewPartTime">
+                                    0
+                                </strong>
+
+                            </p>
+
+
+                            <p>
+
+                                <span class="dot green-dot"></span>
+
+                                Contract Personnel:
+
+                                <strong id="overviewContract">
+                                    0
+                                </strong>
+
+                            </p>
+
+
+                            <p>
+
+                                <span class="dot orange-dot"></span>
+
+                                National Service:
+
+                                <strong id="overviewNationalService">
+                                    0
+                                </strong>
+
+                            </p>
+
+
+                            <p>
+
+                                <span class="dot blue-dot"></span>
+
+                                Interns:
+
+                                <strong id="overviewInterns">
+                                    0
+                                </strong>
+
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- =================================
+                     RECENT STAFF
+                ================================== -->
+
+                <div class="dashboard-card">
+
+
+                    <div class="card-heading">
+
+                        <h2>
+                            Recent Added Staff
+                        </h2>
+
+
+                        <a href="staff.html">
+                            View All
+                        </a>
+
+                    </div>
+
+
+                    <div
+                        class="recent-staff-list"
+                        id="recentStaffList"
+                    >
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+    <!-- =================================
+         JAVASCRIPT FILES
+    ================================== -->
+
+    <script src="../js/common.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/dashboard.js"></script>
+
+
+</body>
+
+</html>
